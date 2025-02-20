@@ -29,6 +29,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.Order.WebAPI",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.Order.Persistence", "Services\Order\Infrastructure\ShoppingCart.Order.Persistence\ShoppingCart.Order.Persistence.csproj", "{F42FF9BB-951F-42E1-80B0-45F9DFA57982}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityServer", "{4A9CD7C7-DE52-4B4C-BB12-E3E2189FFE66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.IdentityServer", "IdentityServer\ShoppingCart.IdentityServer\ShoppingCart.IdentityServer.csproj", "{C6360BE5-2104-478A-A9EE-0290F40366DB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -59,6 +63,10 @@ Global
 		{F42FF9BB-951F-42E1-80B0-45F9DFA57982}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F42FF9BB-951F-42E1-80B0-45F9DFA57982}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F42FF9BB-951F-42E1-80B0-45F9DFA57982}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6360BE5-2104-478A-A9EE-0290F40366DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6360BE5-2104-478A-A9EE-0290F40366DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6360BE5-2104-478A-A9EE-0290F40366DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6360BE5-2104-478A-A9EE-0290F40366DB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -76,5 +84,6 @@ Global
 		{0B47F91C-EA5E-4AE0-8918-F7A314F45DBF} = {41BEC95F-B0E2-4D32-9419-52F16574B96E}
 		{222C35DA-D161-42DD-B0A4-DDCA45654612} = {65ACE650-612E-42D7-9864-AA1A3058FC1B}
 		{F42FF9BB-951F-42E1-80B0-45F9DFA57982} = {B41B6CB7-CFB8-45C8-B12A-26751DC603E0}
+		{C6360BE5-2104-478A-A9EE-0290F40366DB} = {4A9CD7C7-DE52-4B4C-BB12-E3E2189FFE66}
 	EndGlobalSection
 EndGlobal
