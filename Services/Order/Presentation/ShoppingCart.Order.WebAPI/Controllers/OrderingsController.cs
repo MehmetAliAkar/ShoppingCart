@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.Order.Application.Features.Mediator.Commands;
@@ -6,6 +7,7 @@ using ShoppingCart.Order.Application.Features.Mediator.Queries;
 
 namespace ShoppingCart.Order.WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class OrderingsController : ControllerBase

@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using ShoppingCart.Order.Application.Features.CQRS.Commands.OrderDetailCommands;
 using ShoppingCart.Order.Application.Features.CQRS.Handlers.AdressHandlers;
 using ShoppingCart.Order.Application.Features.CQRS.Handlers.OrderDetailHandlers;
@@ -7,6 +8,13 @@ using ShoppingCart.Order.Persistence.Context;
 using ShoppingCart.Order.Persistence.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+{
+    opt.Authority = builder.Configuration["IdentityServerUrl"];
+    opt.Audience = "ResourceOrder";
+    opt.RequireHttpsMetadata = false;
+});
 
 builder.Services.AddDbContext<OrderContext>();
 
@@ -40,6 +48,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

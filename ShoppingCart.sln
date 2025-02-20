@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IdentityServer", "IdentityS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.IdentityServer", "IdentityServer\ShoppingCart.IdentityServer\ShoppingCart.IdentityServer.csproj", "{C6360BE5-2104-478A-A9EE-0290F40366DB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cargo", "Cargo", "{5AF8E496-476F-4417-A237-80B501F90A8D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShoppingCart.Cargo.Business", "Services\Cargo\ShoppingCart.Cargo.Business\ShoppingCart.Cargo.Business.csproj", "{71B21115-604C-43F0-94D8-90DD07467F48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +71,10 @@ Global
 		{C6360BE5-2104-478A-A9EE-0290F40366DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6360BE5-2104-478A-A9EE-0290F40366DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6360BE5-2104-478A-A9EE-0290F40366DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71B21115-604C-43F0-94D8-90DD07467F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71B21115-604C-43F0-94D8-90DD07467F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71B21115-604C-43F0-94D8-90DD07467F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71B21115-604C-43F0-94D8-90DD07467F48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -85,5 +93,7 @@ Global
 		{222C35DA-D161-42DD-B0A4-DDCA45654612} = {65ACE650-612E-42D7-9864-AA1A3058FC1B}
 		{F42FF9BB-951F-42E1-80B0-45F9DFA57982} = {B41B6CB7-CFB8-45C8-B12A-26751DC603E0}
 		{C6360BE5-2104-478A-A9EE-0290F40366DB} = {4A9CD7C7-DE52-4B4C-BB12-E3E2189FFE66}
+		{5AF8E496-476F-4417-A237-80B501F90A8D} = {C53DB454-AF34-4CAF-8373-60CD849BE4AF}
+		{71B21115-604C-43F0-94D8-90DD07467F48} = {5AF8E496-476F-4417-A237-80B501F90A8D}
 	EndGlobalSection
 EndGlobal

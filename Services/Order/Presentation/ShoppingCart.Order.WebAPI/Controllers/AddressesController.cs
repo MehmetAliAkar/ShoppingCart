@@ -1,10 +1,12 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using ShoppingCart.Order.Application.Features.CQRS.Commands.AddressCommands;
 using ShoppingCart.Order.Application.Features.CQRS.Handlers.AdressHandlers;
 using ShoppingCart.Order.Application.Features.CQRS.Queries.AddressQueries;
 
 namespace ShoppingCart.Order.WebAPI.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class AddressesController : ControllerBase
