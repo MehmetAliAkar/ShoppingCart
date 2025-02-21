@@ -18,7 +18,8 @@ namespace ShoppingCart.Discount.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=127.0.0.1,1431;Initial Catalog=ShoppingCartDiscountDb;Application Name=ShoppingCartDiscountDb;User Id=sa;Password=test123*;TrustServerCertificate=true;");
+            optionsBuilder.UseSqlServer("Data Source=127.0.0.1,1431;Initial Catalog=ShoppingCartDiscountDb;Application Name=ShoppingCartDiscountDb;User Id=sa;Password=test123*;TrustServerCertificate=true;",
+                sqlServerOptions => sqlServerOptions.EnableRetryOnFailure());
         }
 
         public DbSet<Coupon> Coupons { get; set; }
