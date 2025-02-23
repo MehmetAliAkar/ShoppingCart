@@ -1,6 +1,6 @@
-﻿using ShoppingCart.Basket.Dtos;
+﻿using ShoppingCart.Basket.WebAPI.Dtos;
 
-namespace ShoppingCart.Basket.Services
+namespace ShoppingCart.Basket.WebAPI.Services
 {
     public interface IBasketService
     {

@@ -1,4 +1,4 @@
-﻿namespace ShoppingCart.Basket.LoginService
+﻿namespace ShoppingCart.Basket.WebAPI.LoginService
 {
     public class LoginService : ILoginService
     {

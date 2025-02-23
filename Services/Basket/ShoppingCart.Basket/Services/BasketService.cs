@@ -1,8 +1,8 @@
-﻿using ShoppingCart.Basket.Dtos;
-using ShoppingCart.Basket.Settings;
+﻿using ShoppingCart.Basket.WebAPI.Dtos;
+using ShoppingCart.Basket.WebAPI.Settings;
 using System.Text.Json;
 
-namespace ShoppingCart.Basket.Services
+namespace ShoppingCart.Basket.WebAPI.Services
 {
     public class BasketService : IBasketService
     {

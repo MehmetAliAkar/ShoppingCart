@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ShoppingCart.Basket.Dtos;
-using ShoppingCart.Basket.LoginService;
-using ShoppingCart.Basket.Services;
+using ShoppingCart.Basket.WebAPI.Dtos;
+using ShoppingCart.Basket.WebAPI.LoginService;
+using ShoppingCart.Basket.WebAPI.Services;
 
-namespace ShoppingCart.Basket.Controllers
+namespace ShoppingCart.Basket.WebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

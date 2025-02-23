@@ -1,6 +1,6 @@
 ﻿using StackExchange.Redis;
 
-namespace ShoppingCart.Basket.Settings
+namespace ShoppingCart.Basket.WebAPI.Settings
 {
     public class RedisService
     {

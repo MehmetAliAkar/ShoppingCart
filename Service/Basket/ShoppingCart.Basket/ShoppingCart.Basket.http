@@ -1,6 +1,0 @@
-@ShoppingCart.Basket_HostAddress = http://localhost:5206
-
-GET {{ShoppingCart.Basket_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

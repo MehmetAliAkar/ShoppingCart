@@ -2,9 +2,9 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.Authorization;
 using Microsoft.Extensions.Options;
-using ShoppingCart.Basket.LoginService;
-using ShoppingCart.Basket.Services;
-using ShoppingCart.Basket.Settings;
+using ShoppingCart.Basket.WebAPI.LoginService;
+using ShoppingCart.Basket.WebAPI.Services;
+using ShoppingCart.Basket.WebAPI.Settings;
 using System.IdentityModel.Tokens.Jwt;
 
 var builder = WebApplication.CreateBuilder(args);

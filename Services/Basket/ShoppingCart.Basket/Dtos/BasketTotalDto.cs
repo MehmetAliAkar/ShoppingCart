@@ -1,4 +1,4 @@
-﻿namespace ShoppingCart.Basket.Dtos
+﻿namespace ShoppingCart.Basket.WebAPI.Dtos
 {
     public class BasketTotalDto
     {
