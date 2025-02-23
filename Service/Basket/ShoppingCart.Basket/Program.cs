@@ -10,8 +10,8 @@ using System.IdentityModel.Tokens.Jwt;
 var builder = WebApplication.CreateBuilder(args);
 
 var requiredAuthorizePolicy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();//Proje seviyesinde authentication yapmak için
-JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub"); //userid alırken sıkıntı çıkmaması için kullandık
-
+JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("nameidentifier"); // Varsayılan dönüşümleri temizle
+                                                                  //userid alırken sıkıntı çıkmaması için kullandık
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
 {
     opt.Authority = builder.Configuration["IdentityServerUrl"];

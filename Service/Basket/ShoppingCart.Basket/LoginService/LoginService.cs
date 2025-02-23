@@ -2,14 +2,14 @@
 {
     public class LoginService : ILoginService
     {
-        private readonly IHttpContextAccessor _contextAccessor;
+        private readonly IHttpContextAccessor _httpContextAccessor;
 
-        public LoginService(IHttpContextAccessor contextAccessor)
+        public LoginService(IHttpContextAccessor httpContextAccessor)
         {
-            _contextAccessor = contextAccessor;
+            _httpContextAccessor = httpContextAccessor;
         }
 
-        public string GetUserId => _contextAccessor.HttpContext?.User?.FindFirst("sub")?.Value ?? throw new UnauthorizedAccessException("User is not authenticated");
-
+        public string GetUserId => _httpContextAccessor.HttpContext.User.FindFirst("nameidentifier").Value;
+        //TODO
     }
 }
